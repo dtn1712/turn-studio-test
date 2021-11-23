@@ -7,5 +7,6 @@ export const TICKER_TAPE_PHRASES = [
   "Digest better.",
   "Parent better.",
   "Relax better.",
-  "Treat yourself + others better. Do life better."
+  "Treat yourself + others better.",
+  "Do life better."
 ];

@@ -1,32 +1,43 @@
-/* @keyframes marquee {
-  0%   { right: -102%; top: 0px; }
-  100% { right: 102%; top: 0px; }
-}
 
-.loop-animation {
+.ticker-wrap {
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ticker {
+  display: inline-block;
+  animation: marquee 40s linear infinite;
+}
+.item-collection {
   position: relative;
-  animation-name: marquee;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-} */
+  left: 0%;
+  animation: swap 40s linear infinite;
+}
 
-@keyframes animate {
-  from {
-    background-position: 0 0;
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+}
+
+/* Transition */
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
   }
-  to {
-    background-position: -60px 0;
+  100% {
+    transform: translateX(-100%)
   }
 }
 
-.loop-animation {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #001;
-  background-image: radial-gradient(white 15%, transparent 16%), radial-gradient(white 15%, transparent 16%);
-  background-size: 60px 60px;
-  animation: animate 300ms linear infinite;
+@keyframes swap {
+  0%, 50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
 }
