@@ -7,7 +7,7 @@ const TapePhrase = ({ index, word }) => {
     <span className={cx({
       light: index % 2 === 0,
       italic: index % 2 === 1,
-    }, 'item')}>{word} &nbsp; </span>
+    }, 'item')}>{word}</span>
   );
 };
 

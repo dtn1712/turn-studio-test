@@ -1,23 +1,5 @@
-.App {
-  text-align: center;
-  min-height: 100vh;
-  background-color: #282c34;
-}
-
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .loop-text {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #eee7e2 !important;
   height: 71px;
   color: #45221D;
@@ -28,7 +10,7 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media only screen and (max-width: 600px) {
   .loop-text {
     font-size: 21px;
     line-height: 27px;

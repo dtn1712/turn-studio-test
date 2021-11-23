@@ -4,6 +4,7 @@ import { TICKER_TAPE_PHRASES } from '../../constants/variables';
 import './_styles.css';
 
 function LoopText () {
+
   return <div className="ticker-wrap">
     <div className="ticker">
       <span className="item-collection">
