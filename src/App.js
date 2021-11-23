@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import LoopText from './containers/LoopText';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p> Turn Studio Test Project </p>
       </header>
+      <div className="loop-text">
+        <LoopText />
+      </div>
     </div>
   );
 }
